@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - {{Your Name}}</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for clean typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">{{Your Name}}</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link active">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h1 class="page-title">About Me</h1>
+                    <p class="about-description">I'm {{your name}}, a high school senior passionate about {{your interests}}. I combine creativity and focus both on the soccer field and in my projects.</p>
+                    
+                    <div class="skills-section">
+                        <h2 class="skills-title">Skills & Interests</h2>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <span class="skill-icon">⚽</span>
+                                <span class="skill-name">Soccer</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">📊</span>
+                                <span class="skill-name">Analytics</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">💻</span>
+                                <span class="skill-name">Web Design</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">📐</span>
+                                <span class="skill-name">AP Calc</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cta-section">
+                        <a href="projects.html" class="cta-button">See My Work</a>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <div class="image-placeholder-large">
+                        {{insert profile image here}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="{{linkedin.com/in/yourprofile}}" target="_blank" class="social-link">LinkedIn</a>
+                <a href="{{@yourhandle}}" target="_blank" class="social-link">Instagram</a>
+                <a href="mailto:{{your.email@example.com}}" class="social-link">Email</a>
+            </div>
+            <p class="copyright">&copy; {{2024}} {{Your Name}}. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Simple Mobile Menu Toggle -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+    </script>
+</body>
+</html>
