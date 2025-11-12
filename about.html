@@ -3,111 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - {{Your Name}}</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts for clean typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>CodeCanvas Chronicles | About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
 </head>
-<body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="index.html">{{Your Name}}</a>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link active">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="projects.html" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- About Section -->
-    <section class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h1 class="page-title">About Me</h1>
-                    <p class="about-description">I'm {{your name}}, a high school senior passionate about {{your interests}}. I combine creativity and focus both on the soccer field and in my projects.</p>
-                    
-                    <div class="skills-section">
-                        <h2 class="skills-title">Skills & Interests</h2>
-                        <div class="skills-grid">
-                            <div class="skill-item">
-                                <span class="skill-icon">⚽</span>
-                                <span class="skill-name">Soccer</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-icon">📊</span>
-                                <span class="skill-name">Analytics</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-icon">💻</span>
-                                <span class="skill-name">Web Design</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-icon">📐</span>
-                                <span class="skill-name">AP Calc</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cta-section">
-                        <a href="projects.html" class="cta-button">See My Work</a>
-                    </div>
+<body class="bg-blue-50">
+    <custom-navbar></custom-navbar>
+    
+    <main class="container mx-auto px-4 py-12">
+        <section class="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+            <div class="flex flex-col md:flex-row gap-8 items-center mb-12">
+                <div class="w-full md:w-1/3">
+                    <img src="http://static.photos/people/640x360/1" alt="Profile Photo" class="rounded-full border-4 border-blue-200 w-64 h-64 object-cover mx-auto">
                 </div>
-                
-                <div class="about-image">
-                    <div class="image-placeholder-large">
-                        {{insert profile image here}}
+                <div class="w-full md:w-2/3">
+                    <h1 class="text-4xl font-bold text-blue-800 mb-4">About Me</h1>
+                    <p class="text-blue-600 mb-4">Hello! I'm a passionate web and app developer currently honing my skills through a comprehensive CTE program.</p>
+                    <p class="text-blue-600 mb-4">My journey in technology began when I built my first website at 14, and since then I've been fascinated by the endless possibilities of digital creation.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-blue-500 hover:text-blue-700">
+                            <i data-feather="github"></i>
+                        </a>
+                        <a href="#" class="text-blue-500 hover:text-blue-700">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                        <a href="#" class="text-blue-500 hover:text-blue-700">
+                            <i data-feather="twitter"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="{{linkedin.com/in/yourprofile}}" target="_blank" class="social-link">LinkedIn</a>
-                <a href="{{@yourhandle}}" target="_blank" class="social-link">Instagram</a>
-                <a href="mailto:{{your.email@example.com}}" class="social-link">Email</a>
+            <div class="mb-12">
+                <h2 class="text-3xl font-semibold text-blue-700 mb-6">My Development Journey</h2>
+                <div class="space-y-8">
+                    <div class="border-l-4 border-blue-500 pl-6 py-2">
+                        <h3 class="text-xl font-medium text-blue-700 mb-2">Early Beginnings</h3>
+                        <p class="text-blue-600">Started with basic HTML and CSS, creating simple websites for fun and school projects.</p>
+                    </div>
+                    <div class="border-l-4 border-blue-500 pl-6 py-2">
+                        <h3 class="text-xl font-medium text-blue-700 mb-2">CTE Program Enrollment</h3>
+                        <p class="text-blue-600">Joined the Web and App Development program to formalize my skills and learn industry best practices.</p>
+                    </div>
+                    <div class="border-l-4 border-blue-500 pl-6 py-2">
+                        <h3 class="text-xl font-medium text-blue-700 mb-2">Current Focus</h3>
+                        <p class="text-blue-600">Expanding my knowledge in JavaScript frameworks, mobile app development, and UX design principles.</p>
+                    </div>
+                </div>
             </div>
-            <p class="copyright">&copy; {{2024}} {{Your Name}}. All rights reserved.</p>
-        </div>
-    </footer>
 
-    <!-- Simple Mobile Menu Toggle -->
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
-
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-        }));
-    </script>
+            <div>
+                <h2 class="text-3xl font-semibold text-blue-700 mb-6">Education & Certifications</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-medium text-blue-700 mb-2">Web & App Development CTE Program</h3>
+                        <p class="text-blue
+    <style>
+      main {
+        padding-bottom: 80px; /* Add padding to prevent content from being hidden behind footer nav */
+      }
+    </style>
 </body>
 </html>
