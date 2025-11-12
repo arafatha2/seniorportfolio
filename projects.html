@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeCanvas Chronicles | Contact</title>
+    <title>CodeCanvas Chronicles | My Projects</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
@@ -14,87 +15,127 @@
     <custom-navbar></custom-navbar>
     
     <main class="container mx-auto px-4 py-12">
-        <section class="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-lg">
-            <h1 class="text-5xl font-bold text-blue-800 mb-6 text-center">Get In Touch</h1>
-            
-            <div class="grid md:grid-cols-2 gap-12 mb-12">
-                <!-- Contact Information -->
-                <div>
-                    <h2 class="text-3xl font-semibold text-blue-700 mb-6">Contact Information</h2>
+        <section class="max-w-6xl mx-auto">
+            <!-- Page Header -->
+            <div class="text-center mb-16">
+                <h1 class="text-5xl font-bold text-blue-800 mb-4">My Projects</h1>
+                <p class="text-xl text-blue-600">A collection of my work in web and app development</p>
+            </div>
+
+            <!-- Projects Filter -->
+            <div class="flex justify-center mb-12">
+                <div class="inline-flex rounded-md shadow-sm">
+                    <!-- Add/remove filter buttons as needed -->
+                    <button type="button" class="px-4 py-2 text-sm font-medium text-blue-700 bg-white border border-blue-200 rounded-l-lg hover:bg-blue-50 focus:z-10 focus:ring-2 focus:ring-blue-700">
+                        All Projects
+                    </button>
+                    <button type="button" class="px-4 py-2 text-sm font-medium text-blue-700 bg-white border-t border-b border-blue-200 hover:bg-blue-50 focus:z-10 focus:ring-2 focus:ring-blue-700">
+                        Web Development
+                    </button>
+                    <button type="button" class="px-4 py-2 text-sm font-medium text-blue-700 bg-white border border-blue-200 rounded-r-lg hover:bg-blue-50 focus:z-10 focus:ring-2 focus:ring-blue-700">
+                        Mobile Apps
+                    </button>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- PROJECT TEMPLATE - Copy and paste this block for each new project -->
+                <!-- START OF PROJECT TEMPLATE -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <!-- Replace the image URL with your project screenshot -->
+                    <img src="http://static.photos/technology/640x360/1" alt="Project Screenshot" class="w-full h-48 object-cover">
                     
-                    <!-- REPLACE WITH YOUR ACTUAL CONTACT DETAILS -->
-                    <div class="space-y-6">
-                        <div class="flex items-start">
-                            <i data-feather="mail" class="text-blue-500 mr-4 mt-1"></i>
-                            <div>
-                                <h3 class="text-xl font-medium text-blue-700 mb-1">Email</h3>
-                                <a href="mailto:your.email@example.com" class="text-blue-600 hover:text-blue-800">your.email@example.com</a>
-                            </div>
+                    <div class="p-6">
+                        <!-- Project Title - Edit text inside -->
+                        <h3 class="text-2xl font-semibold text-blue-800 mb-2">Project Name</h3>
+                        
+                        <!-- Project Description - Edit text inside -->
+                        <p class="text-blue-600 mb-4">
+                            Brief description of your project. Explain what it does, 
+                            who it's for, and any key features.
+                        </p>
+                        
+                        <!-- Technologies Used - Add/remove tags as needed -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">HTML</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">CSS</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">JavaScript</span>
                         </div>
                         
-                        <div class="flex items-start">
-                            <i data-feather="phone" class="text-blue-500 mr-4 mt-1"></i>
-                            <div>
-                                <h3 class="text-xl font-medium text-blue-700 mb-1">Phone</h3>
-                                <a href="tel:+1234567890" class="text-blue-600 hover:text-blue-800">(123) 456-7890</a>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <i data-feather="map-pin" class="text-blue-500 mr-4 mt-1"></i>
-                            <div>
-                                <h3 class="text-xl font-medium text-blue-700 mb-1">Location</h3>
-                                <p class="text-blue-600">Your City, State</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Social Media Links -->
-                    <div class="mt-8">
-                        <h3 class="text-xl font-medium text-blue-700 mb-4">Connect With Me</h3>
+                        <!-- Project Links - Edit href values and remove if not needed -->
                         <div class="flex space-x-4">
-                            <!-- REPLACE WITH YOUR ACTUAL SOCIAL MEDIA LINKS -->
-                            <a href="#" class="text-blue-500 hover:text-blue-700">
-                                <i data-feather="github"></i>
+                            <a href="#" class="text-blue-500 hover:text-blue-700 flex items-center">
+                                <i data-feather="external-link" class="mr-2"></i> Live Demo
                             </a>
-                            <a href="#" class="text-blue-500 hover:text-blue-700">
-                                <i data-feather="linkedin"></i>
-                            </a>
-                            <a href="#" class="text-blue-500 hover:text-blue-700">
-                                <i data-feather="twitter"></i>
-                            </a>
-                            <a href="#" class="text-blue-500 hover:text-blue-700">
-                                <i data-feather="instagram"></i>
+                            <a href="#" class="text-blue-500 hover:text-blue-700 flex items-center">
+                                <i data-feather="github" class="mr-2"></i> Source Code
                             </a>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Contact Form -->
-                <div>
-                    <h2 class="text-3xl font-semibold text-blue-700 mb-6">Send Me a Message</h2>
-                    <form class="space-y-4">
-                        <div>
-                            <label for="name" class="block text-blue-700 mb-2">Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <!-- END OF PROJECT TEMPLATE -->
+
+                <!-- Example Project 1 - Edit or duplicate as needed -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="http://static.photos/technology/640x360/2" alt="E-Commerce Platform" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-blue-800 mb-2">E-Commerce Platform</h3>
+                        <p class="text-blue-600 mb-4">
+                            A full-featured online store with product listings, shopping cart, 
+                            and secure checkout.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">React</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">Node.js</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">MongoDB</span>
                         </div>
-                        <div>
-                            <label for="email" class="block text-blue-700 mb-2">Email</label>
-                            <input type="email" id="email" class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-blue-500 hover:text-blue-700 flex items-center">
+                                <i data-feather="external-link" class="mr-2"></i> Live Demo
+                            </a>
+                            <a href="#" class="text-blue-500 hover:text-blue-700 flex items-center">
+                                <i data-feather="github" class="mr-2"></i> Source Code
+                            </a>
                         </div>
-                        <div>
-                            <label for="subject" class="block text-blue-700 mb-2">Subject</label>
-                            <input type="text" id="subject" class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        </div>
-                        <div>
-                            <label for="message" class="block text-blue-700 mb-2">Message</label>
-                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                        </div>
-                        <button type="submit" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors w-full">
-                            Send Message
-                        </button>
-                    </form>
+                    </div>
                 </div>
+
+                <!-- Example Project 2 - Edit or duplicate as needed -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="http://static.photos/technology/640x360/3" alt="Task Manager App" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-blue-800 mb-2">Task Manager App</h3>
+                        <p class="text-blue-600 mb-4">
+                            Productivity application for managing tasks with drag-and-drop 
+                            functionality and team collaboration.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">Vue.js</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">Firebase</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-blue-500 hover:text-blue-700 flex items-center">
+                                <i data-feather="external-link" class="mr-2"></i> Live Demo
+                            </a>
+                            <a href="#" class="text-blue-500 hover:text-blue-700 flex items-center">
+                                <i data-feather="github" class="mr-2"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="text-center mt-16">
+                <h2 class="text-3xl font-semibold text-blue-700 mb-4">Have a project in mind?</h2>
+                <p class="text-blue-600 mb-6 max-w-2xl mx-auto">
+                    I'm always open to discussing new projects, creative ideas or opportunities
+                    to be part of your vision.
+                </p>
+                <a href="contact.html" class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                    <i data-feather="mail" class="mr-2"></i> Contact Me
+                </a>
             </div>
         </section>
     </main>
